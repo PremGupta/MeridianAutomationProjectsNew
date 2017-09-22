@@ -3,7 +3,8 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="MeridianPackage.loginPageTestCases"/>
+      <class name="MeridianPackage.Accessories_Blenders_TestCases1"/>
+      <class name="MeridianPackage.Accessories_CoffeeBevarages_TestCases2"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

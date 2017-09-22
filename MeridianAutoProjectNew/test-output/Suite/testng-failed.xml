@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="AltimetrikPackage.loginPageTestCases">
+      <class name="MeridianPackage.Accessories_CoffeeBevarages_TestCases2">
         <methods>
-          <include name="loginPageTestCases" invocation-numbers="0"/>
+          <include name="SecondTestCase" invocation-numbers="0"/>
         </methods>
-      </class> <!-- AltimetrikPackage.loginPageTestCases -->
+      </class> <!-- MeridianPackage.Accessories_CoffeeBevarages_TestCases2 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -13,6 +13,9 @@ public class AwardsCentralHomePage{
 	By accessories =By.xpath("//a[text()='Accessories']");
 	By blenders =By.xpath("//a[text()='Blenders']");
 	
+	By coffeebeverages =By.xpath("//a[text()='Coffee & Beverages']");
+	
+	
 	   
 	public AwardsCentralHomePage(WebDriver driver)
 	{
@@ -32,6 +35,11 @@ public class AwardsCentralHomePage{
 	   public  WebElement Blenders()
 	   {
 		   return driver.findElement(blenders);
+	   }
+	   
+	   public  WebElement CoffeeBeverages()
+	   {
+		   return driver.findElement(coffeebeverages);
 	   }
    
 }
