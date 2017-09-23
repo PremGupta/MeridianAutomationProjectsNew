@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="MeridianPackage.Accessories_TestCases">
+      <class name="MeridianPackage.Childrens_TestCases2">
         <methods>
           <include name="FirstTestCase" invocation-numbers="0"/>
-          <include name="LoginMethod"/>
+          <include name="BrowserClose"/>
         </methods>
-      </class> <!-- MeridianPackage.Accessories_TestCases -->
+      </class> <!-- MeridianPackage.Childrens_TestCases2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="MeridianPackage.Accessories_CoffeeBevarages_TestCases2">
+      <class name="MeridianPackage.Childrens_TestCases2">
         <methods>
-          <include name="SecondTestCase" invocation-numbers="0"/>
+          <include name="FirstTestCase" invocation-numbers="0"/>
+          <include name="BrowserClose"/>
         </methods>
-      </class> <!-- MeridianPackage.Accessories_CoffeeBevarages_TestCases2 -->
+      </class> <!-- MeridianPackage.Childrens_TestCases2 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -16,9 +16,10 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import ObjectRepository.HomePage;
-import ObjectRepository.Shoppingcart;
+import ObjectRepository_Accessories.Shoppingcart;
 import ObjectRepository.AwardsCentralHomePage;
-import ObjectRepository.Blenders;
+import ObjectRepository_Accessories.Blenders;
+import ObjectRepository_Accessories.CoffeeBevarages;
 import ObjectRepository.loginPage;
 
 

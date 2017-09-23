@@ -17,10 +17,10 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import ObjectRepository.HomePage;
-import ObjectRepository.Shoppingcart;
+import ObjectRepository_Accessories.Shoppingcart;
 import ObjectRepository.AwardsCentralHomePage;
-import ObjectRepository.Blenders;
-import ObjectRepository.CoffeeBevarages;
+import ObjectRepository_Accessories.Blenders;
+import ObjectRepository_Accessories.CoffeeBevarages;
 import ObjectRepository.loginPage;
 import jdk.internal.org.objectweb.asm.tree.TryCatchBlockNode;
 
@@ -31,17 +31,17 @@ public class Accessories_WithLoops_TestCases {
  
 	public static WebDriver driver;
 	
-/*@BeforeTest
+/*@BeforeTestS
 public static void initializeBrowser() throws IOException
 {
 	driver=browseropen();
 }*/
 
 	@BeforeSuite
-
+	
 	public void LoginMethod()
 	{
-		System.setProperty("webdriver.chrome.driver", "E:\\Mee\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "F:\\VICKY STUDY\\Drivers and Jars\\chromedriver_win32\\chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.get("https://demosite.meridinet.com/template/login.html");
 		driver.manage().window().maximize();
