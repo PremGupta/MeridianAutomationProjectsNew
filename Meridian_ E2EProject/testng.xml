@@ -17,31 +17,4 @@
     </classes>
   </test> <!-- Test -->
  
- 
- 
- 
- <!--  <test name="Validating User login">
-    <classes>
-      <class name="Academy.HomePage"/>
-          </classes>
-      </test>
-      
-    <test name="Validating title in the Page">
-         <classes>
-      <class name="Academy.validateTitle"/>
-       </classes>
-      </test>
-       <test name="App Testing">
-         <classes>
-      <class name="Academy.AppTest"/>
-       </classes>
-      </test>
-            <test name="Validating navigation Bar">
-         <classes>
-      <class name="Academy.validateNavigationBar"/>
-   </classes>
-      </test>
-   Test
- -->
- 
  </suite> <!-- Suite -->
