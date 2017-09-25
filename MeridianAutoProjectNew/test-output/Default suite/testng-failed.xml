@@ -5,7 +5,7 @@
     <classes>
       <class name="MeridianPackage.Childrens_TestCases2">
         <methods>
-          <include name="FirstTestCase" invocation-numbers="0"/>
+          <include name="SecondTestCase" invocation-numbers="0"/>
           <include name="BrowserClose"/>
         </methods>
       </class> <!-- MeridianPackage.Childrens_TestCases2 -->

@@ -1,32 +1,24 @@
 package MeridianPackage;
 
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.List;
-import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import ObjectRepository.HomePage;
-import ObjectRepository_Accessories.Shoppingcart;
 import ObjectRepository.AwardsCentralHomePage;
-import ObjectRepository_Accessories.Blenders;
-import ObjectRepository_Accessories.CoffeeBevarages;
+import ObjectRepository.HomePage;
 import ObjectRepository.loginPage;
-import jdk.internal.org.objectweb.asm.tree.TryCatchBlockNode;
+import ObjectRepository_Accessories.Shoppingcart;
+import Resources.base;
 
 
 //import Resources.base;
@@ -94,7 +86,7 @@ public void FirstTestCase(String Appliances) throws IOException, InterruptedExce
 				System.out.println("                                          ");
 				
 				//For all products
-			    //driver.navigate().to("https://demosite.meridinet.com/merlin/awardscentral?mgr=Item&command=getSubCategoryItems&style=sub_category&category_cd=APN&sub_category_cd=BLE");
+			    driver.navigate().to("https://demosite.meridinet.com/merlin/awardscentral?mgr=Item&command=getSubCategoryItems&style=sub_category&category_cd=APN&sub_category_cd=BLE");
 			    
 				
 					
@@ -120,14 +112,16 @@ public void FirstTestCase(String Appliances) throws IOException, InterruptedExce
 						int ProdsCounts2=prods2.size();
 						//System.out.println(ProdsCounts2);
 						
-						for (int j22 = 0; j22 <= ProdsCounts2-1; j22++) {
+						/*for (int j22 = 0; j22 <= ProdsCounts2-1; j22++) {*/
+							for (int j22 = 0; j22 <= 0; j22++) {
+
 							System.out.println("==========================================");
 							System.out.println(driver.findElements(By.xpath(".//a[@class='productName']")).get(j22).getText());
 							driver.findElements(By.xpath(".//*[@id='content']/div[2]//a/img")).get(j22).click();
 							addToCart();
 							System.out.println("                                          ");
 							
-						    //driver.navigate().to("https://demosite.meridinet.com/merlin/awardscentral?mgr=Item&command=getSubCategoryItems&style=sub_category&category_cd=APN&sub_category_cd=COB");
+						    driver.navigate().to("https://demosite.meridinet.com/merlin/awardscentral?mgr=Item&command=getSubCategoryItems&style=sub_category&category_cd=APN&sub_category_cd=COB");
 
 						}
 		         }
@@ -140,8 +134,7 @@ public void FirstTestCase(String Appliances) throws IOException, InterruptedExce
  } 
 	
 }catch (Exception e) {
-//e.printStackTrace();
-	}
+base.getscreenshot(driver);	}
 
 }
 
@@ -167,7 +160,7 @@ public static void addToCart()
 
 @AfterTest
 
-public void BrowserClose()
+public void BrowserClose(WebDriver driver)
 {
 	driver.close();
 }
