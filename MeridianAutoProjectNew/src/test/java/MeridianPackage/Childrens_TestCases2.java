@@ -43,7 +43,7 @@ public class Childrens_TestCases2 {
 
 	public void FirstTestCase(String Childrens) throws IOException, InterruptedException
 	{
-		System.setProperty("webdriver.chrome.driver", "F:\\VICKY STUDY\\Drivers and Jars\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "E:\\Mee\\chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.get("https://demosite.meridinet.com/template/login.html");
 		driver.manage().window().maximize();
@@ -160,7 +160,7 @@ public static void colorsize()
 	} 
 	
 	catch (Exception e) {
-    e.printStackTrace();	
+    //e.printStackTrace();	
 }
 	
 	driver.findElement(By.xpath(".//*[@id='product']//li[1]/select")).click();

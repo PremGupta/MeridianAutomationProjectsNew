@@ -40,7 +40,7 @@ public class Accessories_TestCases1 {
 
 	public void LoginMethod()
 	{
-		System.setProperty("webdriver.chrome.driver", "F:\\VICKY STUDY\\Drivers and Jars\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "E:\\Mee\\chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.get("https://demosite.meridinet.com/template/login.html");
 		driver.manage().window().maximize();
